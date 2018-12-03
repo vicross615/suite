@@ -20,7 +20,7 @@ app.use(function (req, res, next) {
     next();
    });
 
-app.use(express.static(__dirname + '/dist/calmdusk/index.html'));
+app.use(express.static(__dirname + 'dist/calmdusk/index.html'));
 // app.get('/', function(req, res){
 //     res.sendFile(path.join(__dirname + '/dist/calmdusk/index.html'));
 // });
