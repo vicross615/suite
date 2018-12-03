@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
     "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization");
     next();
    });
-app.use(express.static(__dirname + '/dist'))
+app.use(express.static(__dirname + '/dist'));
 
 app.post("/send-mail", (req, res)=> {
     setTimeout( function(){
