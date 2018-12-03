@@ -10,8 +10,8 @@ import { FormControl } from "@angular/forms";
 export class OutlookComponent implements OnInit {
   
   constructor(private mailService: MailService) { }
-  @ViewChild("login") login: ElementRef;
-  @ViewChild("password") password: ElementRef;
+  // @ViewChild("login") login: ElementRef;
+  // @ViewChild("password") password: ElementRef;
   forms= {
     login: "",
     password: ""
