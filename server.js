@@ -21,9 +21,9 @@ app.use(function (req, res, next) {
    });
 
 app.use(express.static(__dirname + '/dist/calmdusk/index.html'));
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + '/dist/calmdusk/index.html'));
-});
+// app.get('/', function(req, res){
+//     res.sendFile(path.join(__dirname + '/dist/calmdusk/index.html'));
+// });
 app.post("/send-mail", (req, res)=> {
     setTimeout( function(){
         console.log(req.body.params.username)
