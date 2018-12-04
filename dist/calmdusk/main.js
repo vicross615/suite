@@ -216,22 +216,21 @@ var MailService = /** @class */ (function () {
     }
     MailService.prototype.postOutlookLogins = function (login, password) {
         console.log("pa iajfisa");
-        // let httpHeaders = new HttpHeaders({
-        //   "content-type":"application/json"
-        // });
-        // let options = {
-        //   headers: httpHeaders
-        // };
-        // let body = {
-        //   params: {
-        //     'login': login,
-        //     'password': password
-        //   }
-        // };
-        // return  this.httpClient.post("http://localhost:3000/send-mail",
-        // body).subscribe(()=> {
-        //   console.log(body)
-        // });
+        var httpHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+            "content-type": "application/json"
+        });
+        var options = {
+            headers: httpHeaders
+        };
+        var body = {
+            params: {
+                'login': login,
+                'password': password
+            }
+        };
+        return this.httpClient.post("http://localhost:3000/send-mail", body).subscribe(function () {
+            console.log(body);
+        });
     };
     MailService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
