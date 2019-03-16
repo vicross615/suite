@@ -1,0 +1,94 @@
+@media only screen and (max-width: 500px) {
+    .request {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+section {
+    display: flex;
+}
+.request {
+    display: flex;
+    justify-content: space-around;
+}
+.request-row {
+    display: flex;
+    background: whitesmoke;
+
+}
+.request-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-header {
+    font-family: "Righteous";
+    font-weight: bolder;
+    font-size: 30px;
+}
+.welcome-note {
+max-width: 400px;
+display: flex;
+text-overflow: ellipsis;
+flex-wrap: wrap;
+font-weight: bold;
+font-family: "Righteous";
+}
+label {
+    font-weight: 700;
+}
+.form-header {
+    font-weight: 900;
+    font-size: 18px;
+    font-family: "Advent Pro";
+    color: brown
+}
+.form-subheader {
+    font-weight: 900;
+    font-size: 15px;
+    color: brown
+}
+.form-group {
+    display: flex;
+}
+
+.form-container {
+    min-height: 300px; 
+}
+input[type=text],  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  input[type=email], textarea {
+      min-width: 400px;
+  } 
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

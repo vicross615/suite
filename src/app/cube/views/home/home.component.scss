@@ -1,0 +1,115 @@
+@media only screen and (max-width: 500px) {
+    .col-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .service-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .quote-container{
+        margin: 40px 20px;
+    }
+    .quote-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .quote-header{
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+}
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+}
+.col-row {
+    width: 100%;
+    background: whitesmoke;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+}
+.col-item-1 {
+    background: rgb(110, 158, 38);
+    text-decoration: none;
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 300px;
+}
+.col-item-1:hover {
+    background: rgb(255, 47, 175);
+}
+.col-item-2 {
+    background: rgb(255, 113, 47);
+    text-decoration: none;
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 300px;
+
+}
+.col-item-2:hover {
+    background: rgb(255, 47, 175);
+}
+.col-item-3 {
+    background: rgb(120, 47, 255);
+    text-decoration: none;
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 300px;
+}
+.col-item-3:hover {
+    background: rgb(255, 47, 175);
+}
+.service-row {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.service-item, .service-img > img {
+    width: 300px;
+}
+
+.quote-container {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-row {
+    width: 80%;
+    background: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    color: white
+
+}
+.quote-button {
+    border: 2px solid white;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.quote-header {
+    font-family: "righteous";
+    font-size: 22px;
+    font-weight: 800;
+}

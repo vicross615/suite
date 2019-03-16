@@ -78,7 +78,7 @@
 .info > h1 {
     font-weight: 900;
     margin-bottom: 15px;
-
+    
 }
 .info > h3 {
     font-weight: light;
@@ -93,10 +93,6 @@
     color: white;
     background-color: rgb(24, 165, 24);
     overflow: wrap;
-
-    font-size: 16px;
-    font-weight: bold;
-    font-Family: kurd, sans-serif;
 }
 
 

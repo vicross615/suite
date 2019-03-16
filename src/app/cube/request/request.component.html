@@ -1,0 +1,60 @@
+<section class="request">
+  <div class="request-inner">
+    <span class="welcome-header">
+        WELCOME TO CUBE LINKS
+      </span>
+    <span class="welcome-note">
+        Cube Links Educational Services has been on the success trail where facilitating the future of 
+        those aspiring to achieve great heights in their careers. Operating on the principles of competence,
+         reliability and affordability.
+       our team is made up of experienced travel consultants, career counsellors and academic instructors who provide reliable, time-tested and proven solutions to your travel abroad hassles—one that is suited to our clients’ academic and professional background.
+    </span>
+    <div class="request-row">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="form-container" data-scroll-index="0">
+      <div class="container">
+        <span class="form-header">
+          Quick Request
+        </span>
+        <span class="form-subheader">
+          We value our prospective clients
+        </span>
+          <form >
+            <div class="form-group">
+              <div>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" [(ngModel)]="firstName" placeholder="Your name..">
+              </div>
+              <div>
+                  <label for="fname">Last Name</label>
+                  <input type="text" id="fname" name="lastname" [(ngModel)]="lastName" placeholder="Your last name..">
+              </div>
+            </div>
+
+            <div class="">
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="email" [(ngModel)]="email" placeholder="Your email address..">
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" [(ngModel)]="location" placeholder="Your location..">
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" id="fname" name="phonenumber" [(ngModel)]="phoneNumber" placeholder="Your phone Number..">
+                </div>
+              </div>
+
+            <label for="subject">message</label>
+            <textarea id="subject" name="subject" [(ngModel)]="message" placeholder="Write something.." style="height:150px"></textarea>
+        
+            <input type="submit" value="Submit" (click)="recieveRequest()">
+          </form>
+        </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+@media only screen and (max-width: 500px) {
+    .footer-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        width: inherit;
+    }
+}
+.footer-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: #18184a;
+        color: whitesmoke;
+       min-height: 250px;
+}
+.footer-column {
+    min-width:250px;
+    margin: 20px 20px;
+}
+.footer-top {
+    display: flex;
+    justify-content: center;
+}
+.footer-bottom {
+    max-height:150px;
+    display: flex;
+    align-self: center;
+}
