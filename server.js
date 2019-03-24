@@ -21,7 +21,7 @@ app.use(function (req, res, next) {
     next();
    });
 
-   app.use(express.static(path.join(__dirname, 'dist')));
+   app.use(express.static(path.join(__dirname, 'dist/calmdusk')));
    app.get('/', function(req, res) {
        res.sendfile('./dist/calmdusk/index.html');
    });
