@@ -21,8 +21,8 @@ app.use(function (req, res, next) {
     next();
    });
 
-   app.get("/", autoRedirect, function(req, res){
-    res.sendFile(path.resolve(__dirname, "dist", "index.html"));
+   app.get("/", function(req, res){
+    res.sendFile(path.resolve(__dirname, "/dist/index.html"));
  });
  app.use(express.static(__dirname + '/dist/calmdusk'));
 
