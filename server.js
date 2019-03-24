@@ -22,9 +22,6 @@ app.use(function (req, res, next) {
    });
 
 app.use(express.static(__dirname + '/dist/calmdusk/index.html'));
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/calmdusk/index.html'));
-});
 
 
 
@@ -58,32 +55,32 @@ app.post("/send-mail", (req, res)=> {
    
 });
 
-app.post("/recieve-mail", (req, res) => {
-    var transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-               user: 'cubelinksa1@gmail.com',
-               pass: 'cubelinksadmin'
-           }
-       });
+// app.post("/recieve-mail", (req, res) => {
+//     var transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//                user: 'cubelinksa1@gmail.com',
+//                pass: 'cubelinksadmin'
+//            }
+//        });
     
 
-       let mailOptions = {
-        from: `${req.body.params.email}`, // sender address
-        to: 'cubelinksa1@gmail.com', // list of receivers
-        bcc: 'calmdusk615@gmail.com',
-        subject: req.body.params.firstName, // Subject line
-        text: req.body.params.body, // plain text body
-        html: `<div>${req.body.params.message}</div>` // html body
-    };
+//        let mailOptions = {
+//         from: `${req.body.params.email}`, // sender address
+//         to: 'cubelinksa1@gmail.com', // list of receivers
+//         bcc: 'calmdusk615@gmail.com',
+//         subject: req.body.params.firstName, // Subject line
+//         text: req.body.params.body, // plain text body
+//         html: `<div>${req.body.params.message}</div>` // html body
+//     };
 
-    transporter.sendMail(mailOptions, (err, info) => {
-        if(err)
-         console.log(err)
-         else  
-         console.log(info)
-    })
-}) 
+//     transporter.sendMail(mailOptions, (err, info) => {
+//         if(err)
+//          console.log(err)
+//          else  
+//          console.log(info)
+//     })
+// }) 
 
 
 
