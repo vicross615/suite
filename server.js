@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
    });
 
 app.use(express.static(__dirname + '/dist/calmdusk/index.html'));
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendfile('/dist/calmdusk/index.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
 
