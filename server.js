@@ -21,11 +21,10 @@ app.use(function (req, res, next) {
     next();
    });
 
-   app.get("/", function(req, res){
-    res.sendFile(path.resolve(__dirname, "/dist/index.html"));
- });
- app.use(express.static(__dirname + '/dist/calmdusk'));
-
+   app.use(express.static(path.join(__dirname, 'dist')));
+   app.get('*', function(req, res) {
+       res.sendfile('./dist/index.html');
+   });
 
 
 
