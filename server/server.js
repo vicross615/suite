@@ -98,7 +98,7 @@ var transport = nodemailer.createTransport("smtps:victor@mynairagram.com:"+encod
 //           port: 587,
 //           auth: {
 //             user: "victor@mynairagram.com",
-//             pass: "Rossoneri23$$"
+//             pass: "XXXXXXXXXX"
 //           },
 //           tls: {
 //             ciphers:'SSLv3'
