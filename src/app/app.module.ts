@@ -1,61 +1,51 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OutlookComponent } from './outlook/outlook.component';
-import { Office365Component } from './office365/office365.component';
-import { CubeComponent } from './cube/cube.component';
-import { CubeHeaderComponent } from './cube/cube-header/cube-header.component';
-import { CubeFooterComponent } from './cube/cube-footer/cube-footer.component';
-import { RequestComponent } from './cube/request/request.component';
-import { CubeDashboardComponent } from './cube/cube-dashboard/cube-dashboard.component';
-import { HomeComponent } from './cube/views/home/home.component';
-import { AboutUsComponent } from './views/about-us/about-us.component';
-import { StudyAbroadComponent } from './views/study-abroad/study-abroad.component';
-import { HolidayComponent } from './views/holiday/holiday.component';
-import { MigrationComponent } from './views/migration/migration.component';
-import { ScholarshipsComponent } from './views/scholarships/scholarships.component';
-import { AboutTheTestComponent } from './views/about-the-test/about-the-test.component';
-import { PartnershipsComponent } from './views/partnerships/partnerships.component';
-import { BlogComponent } from './views/blog/blog.component';
-import { NewsComponent } from './views/news/news.component';
-import { ContactUsComponent } from './views/contact-us/contact-us.component';
-import { TestimonialsComponent } from './cube/views/testimonials/testimonials.component';
-import { TempPageComponent } from './cube/auxiliary/temp-page/temp-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppMaterialModule } from './app-material/app-material.module';
+import { AppSidenavComponent } from './app/component/app-sidenav/app-sidenav.component';
+import { DashboardComponent } from './app/component/dashboard/dashboard.component';
+import { LoginComponent } from './app/component/auth/authentication/login/login.component';
+import { SignupComponent } from './app/component/auth/authentication/signup/signup.component';
+import {AuthenticationComponent} from './app/component/auth/authentication/authentication.component';
+import { SuiteComponent } from './app/suite/suite.component';
+import { HomeComponent } from './app/suite/home/home.component';
+import { FXOnboardComponent } from './app/suite/fxonboard/fxonboard.component';
+import { UploadFileComponent } from './app/component/upload-file/upload-file.component';
+import { ReachComponent } from './app/component/reach/reach.component';
+import { SmsComponent } from './app/component/reach/sms/sms.component';
+import { EmailComponent } from './app/component/reach/email/email.component';
+import { ContactComponent } from './app/component/reach/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OutlookComponent,
-    Office365Component,
-    CubeComponent,
-    CubeHeaderComponent,
-    CubeFooterComponent,
-    RequestComponent,
-    CubeDashboardComponent,
+    AppSidenavComponent,
+    DashboardComponent,
+    AuthenticationComponent,
+    LoginComponent,
+    SignupComponent,
+    SuiteComponent,
     HomeComponent,
-    AboutUsComponent,
-    StudyAbroadComponent,
-    HolidayComponent,
-    MigrationComponent,
-    ScholarshipsComponent,
-    AboutTheTestComponent,
-    PartnershipsComponent,
-    BlogComponent,
-    NewsComponent,
-    ContactUsComponent,
-    TestimonialsComponent,
-    TempPageComponent
+    FXOnboardComponent,
+    UploadFileComponent,
+    ReachComponent,
+    SmsComponent,
+    EmailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

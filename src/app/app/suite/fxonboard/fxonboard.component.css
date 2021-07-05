@@ -1,0 +1,49 @@
+list{
+  display: flex;
+  border: 1px solid wheat;
+  background: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  border-radius: 5px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+ul{
+  /*display: flex;*/
+  /*width:100%;*/
+  flex-wrap: wrap;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.bbbutton{
+  display: flex;
+  border: 1px solid wheat;
+  background: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  border-radius: 5px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.submit{
+  display: flex;
+  border: 1px solid wheat;
+  background: rgb(236, 240, 255);
+  width: 300px;
+  border-radius: 5px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}

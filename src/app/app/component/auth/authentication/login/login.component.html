@@ -1,0 +1,53 @@
+<section>
+  <div class="font_container">
+      <h1 class="login_title">
+        Login
+      </h1>
+      <div [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div *ngIf="isNetworkOk" class="error_network">
+          <span >
+            <i class="fa fa-angle-down" style="font-size:24px"></i>
+            <span>
+              Error :
+            </span>
+          </span>
+          <span >
+            Network error. Please check your internet connection and try again.
+          </span>
+        </div>
+
+        <div class="form_item">
+          <span class="form_item_name"> Email:</span>
+          <input  type="email" formControlName="email" placeholder="" />
+          <div *ngIf="myForm.get('email').invalid && (myForm.get('email').dirty || myForm.get('email').touched)">
+            Please provide a name.
+          </div>
+        </div>
+
+        <div class="form_item">
+          <span class="form_item_name">Password:</span>
+          <input  type="password" formControlName="password" placeholder=""/>
+          <div *ngIf="myForm.get('password').invalid && (myForm.get('password').dirty || myForm.get('password').touched)">
+            Please provide a password.
+          </div>
+        </div>
+
+        <button type="submit" [disabled]="myForm.invalid">
+          Login
+        </button>
+      </div>
+
+      <a>
+        Forgot Password?
+      </a>
+  </div>
+  <div>
+    <span>New to Queue?</span>
+    <span>
+      <a>
+        <span>Create an account</span>
+        <i class="fa fa-angle-down" style="font-size:24px"></i>
+      </a>
+    </span>
+  </div>
+</section>

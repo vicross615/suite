@@ -1,0 +1,71 @@
+h1{
+  color: var(--table-text);
+  margin: 50px 50px;
+}
+
+.sms_template_container{
+  height: 500px;
+}
+
+.card_container {
+  display: flex;
+  padding: 20px 40px;
+  overflow: scroll;
+  overflow-y: scroll;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  height: 130px;
+}
+.sms_console{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*form{*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*box-shadow: 20px 20px 50px #00d2c6,*/
+  /*-30px -30px 60px #00ffff;*/
+/*}*/
+
+form
+{
+  align-items: center;
+  background-color: #e0e7ec;
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  border-radius: 50px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin-right: 4rem;
+  width: 500px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: initial;
+}
+
+.to{
+  display: flex;
+  justify-content: space-around;
+  color: antiquewhite;
+  border-radius: 50px;
+  margin-top: 10px;
+  background: #152567;
+}
+.to > span>input{
+  margin-left: 10px;
+  border: none;
+  line-height: 50px;
+  width: 300px;
+  background: white;
+}

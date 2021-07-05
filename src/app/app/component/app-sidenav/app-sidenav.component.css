@@ -1,0 +1,56 @@
+.company_header_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_header_top{
+  display: flex;
+  padding: 15px;
+}
+.company_header_top_name_container{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+.company_header_top_name{
+  font-weight: 800;
+  font-family: Verdana;
+}
+.company_header_top_username{
+  font-weight: 800;
+  font-family: Verdana;
+  color: rgba(88, 116, 113, 0.53);
+}
+
+.featured_list{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a4a4a;
+
+}
+
+.featured_list:hover {
+  background-color: rgba(0, 184, 194, 0.18);
+  border-right: 3px solid #00b8c2;
+  border-left: 3px solid #00b8c2;
+
+}
+.featured_list_item_name{
+  width: 65%;
+  padding-left: 25px;
+}
+a{
+  text-decoration: none;
+  background-color: initial;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}
+
+

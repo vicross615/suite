@@ -1,0 +1,19 @@
+.suite{
+  min-height: 100vh;
+  width: 100%;
+  left: -432px;
+  top: -2861px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(133,166,179);
+  background: linear-gradient(117deg, rgba(133,166,179,1) 7%, rgba(25,226,169,1) 100%);
+}
+
+
+
+app-home{
+  display: flex;
+  width:inherit;
+  height:inherit;
+}

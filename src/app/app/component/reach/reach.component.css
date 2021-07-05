@@ -1,0 +1,29 @@
+.reach_container {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+.side_menu{
+  background-color: var(--purple);
+  display: flex;
+  width:100px;
+  flex-direction: column;
+  color: #00A2F2;
+  justify-content: center;
+  align-items: center;
+
+}
+section > a{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 1px;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+section > a:hover{
+  color: whitesmoke;
+  top: -10px;
+}
+img{
+  width: 50px;
+}

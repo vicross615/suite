@@ -1,0 +1,13 @@
+.auth_container {
+  background-image: url('/assets/no-auth-bg.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center right;
+  height: 100%;
+  background-color: #fff;
+}
+
+.main{
+  display: flex;
+}
+

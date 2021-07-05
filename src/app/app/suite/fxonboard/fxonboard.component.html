@@ -1,0 +1,71 @@
+
+
+
+<section>
+  B2B INTEGRATED SERVICES
+  <div>
+    <ul>
+      <list>
+        <span>
+          VALID LICENSE
+        </span>
+        <div>
+          <input type="file" (change)="uploadFile($event)" style="background: lightgoldenrodyellow; width: 85px;" />
+          <span *ngIf="fileName" style="">{{fileName}}</span>
+        </div>
+
+      </list>
+      <list>
+        <span>LATEST COPY OF AML POLICY</span>
+        <div>
+          <input type="file" (change)="onFileChange($event)" style="background: lightgoldenrodyellow; width: 85px;" />
+        </div>
+      </list>
+      <list>
+        <span>AUTHORISED SIGNATORIES</span>
+        <div>
+          <input type="file" (change)="onFileChange($event)" style="background: lightgoldenrodyellow; width: 85px;" />
+        </div>
+      </list>
+      <list>
+        <span>COPIES OF PASSPORT OF DIRECTORS/AUTHORISED SIGNATORIES</span>
+        <div>
+          <input type="file" (change)="onFileChange($event)" style="background: lightgoldenrodyellow; width: 85px;" />
+        </div>
+      </list>
+      <list>
+        PROOF OF BUSINESS ADDRESS- VERIFIED
+      </list>
+      <list>
+        MEMORANDUM & ARTICLES WITH ANY AMENDMENTS
+      </list>
+      <list>
+        LAST AML EXTERNAL AUDIT
+      </list>
+      <list>
+        INDEPENDENT FINANCE AUDIT
+      </list>
+      <list>
+        AML POLICY
+      </list>
+      <list>
+        ORGANISATIONAL CHART
+      </list>
+      <list>
+        CONTACT EMAILS & NUMBERS
+      </list>
+      <list>
+        SECURITY & PRIVACY POLICY
+      </list>
+    </ul>
+  </div>
+  <div style="display: flex;flex-direction: row;justify-content: center">
+    <button class="bbbutton" style="background:#ff0096b0" >Back</button>
+    <button class="submit" (click)="toggleLoading();">Submit</button>
+  </div>
+
+  <div class="spinner-border text-success" *ngIf="isLoading" style="position: absolute; color: #ff0096b0; height: 40px; width: 40px; z-index: 10;"></div>
+
+
+
+</section>

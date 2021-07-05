@@ -1,0 +1,49 @@
+<section>
+  <h1>
+    Sms
+  </h1>
+  <br>
+
+  <div class="sms_template_container">
+    <h2>
+      Templates
+    </h2>
+
+    <div class="sms_console">
+      <h3>Console</h3>
+      <form [formGroup]="smsForm" (ngSubmit)="onSubmit()">
+        <div class="to">
+          <span>
+            <label>TO</label>
+            <input type="text" formControlName="numbers" placeholder="write or paste comma separated." />
+          </span>
+          <span>
+            <input type="file" style="background: #e0e7eb;    width: 300px;" formControlName="contact_file" (change)="uploadFile($event)" style="background: lightgoldenrodyellow; width: 85px;" />
+          </span>
+        </div>
+        <span *ngIf="fileName" style="">{{fileName}}</span>
+
+        <div style="    align-self: center;     width: 100%;">
+          <textarea type="text" formControlName="message" placeholder="write your message here" style="width:inherit;     height: 250px;"></textarea>
+        </div>
+
+        <button type="submit" style="margin-bottom: 20px;
+                          margin-bottom: 20px;
+    /* border-bottom: 50px; */
+    height: ;
+    background: #162667;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: aqua;
+    font-size: large;">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

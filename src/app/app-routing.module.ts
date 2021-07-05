@@ -1,44 +1,40 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CubeComponent } from './cube/cube.component';
-import { OutlookComponent } from "./outlook/outlook.component";
-import { Office365Component } from './office365/office365.component';
-import { HomeComponent } from './cube/views/home/home.component';
-import { AboutUsComponent } from './views/about-us/about-us.component';
-import { BlogComponent } from './views/blog/blog.component';
-import { ContactUsComponent } from './views/contact-us/contact-us.component';
-import { HolidayComponent } from './views/holiday/holiday.component';
-import { MigrationComponent } from './views/migration/migration.component';
-import { NewsComponent } from './views/news/news.component';
-import { PartnershipsComponent } from './views/partnerships/partnerships.component';
-import { StudyAbroadComponent } from './views/study-abroad/study-abroad.component';
-import { AboutTheTestComponent } from './views/about-the-test/about-the-test.component';
-import { TempPageComponent } from './cube/auxiliary/temp-page/temp-page.component';
+import {SignupComponent} from "./app/component/auth/authentication/signup/signup.component";
+import {LoginComponent} from "./app/component/auth/authentication/login/login.component";
+import {AuthenticationComponent} from "./app/component/auth/authentication/authentication.component";
+import {SuiteComponent} from "./app/suite/suite.component";
+import {FXOnboardComponent} from "./app/suite/fxonboard/fxonboard.component";
+import {HomeComponent} from "./app/suite/home/home.component";
+import {ReachComponent} from "./app/component/reach/reach.component";
+import {ContactComponent} from "./app/component/reach/contact/contact.component";
+import {EmailComponent} from "./app/component/reach/email/email.component";
+import {SmsComponent} from "./app/component/reach/sms/sms.component";
 const routes: Routes = [
   { path: "",redirectTo: 'cube', pathMatch: "full"},
-  { path: "cube", component: CubeComponent, children: [
+  { path: 'auth',component: AuthenticationComponent, children: [
+    {path: '', redirectTo: 'login', pathMatch: "full"},
+    { path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
+  ]},
+  { path: "suite", component: SuiteComponent, children: [
     {path: '', redirectTo: 'home', pathMatch: "full"},
-    {path: 'home', component: HomeComponent},
-    { path: 'aboutus', component: AboutUsComponent},
-    {path: 'blog', component: BlogComponent},
-    {path: 'contactus', component: ContactUsComponent},
-    {path: 'holiday', component: HolidayComponent},
-    {path: 'migration', component: MigrationComponent},
-    {path: 'news', component: NewsComponent},
-    {path: 'partnership', component: PartnershipsComponent},
-    {path: 'studyabroad', component: StudyAbroadComponent},
-    {path: 'aboutthetest', component: AboutTheTestComponent},
-    {path: "temp", component: TempPageComponent}
-  ]
+    { path: 'home', component: HomeComponent},
+    { path: 'fx_onboard', component: FXOnboardComponent}
+    ]
   },
-  { path: "outlook",component: OutlookComponent},
-  { path: "office365", component: Office365Component}
+  {path: 'reach', component:  ReachComponent, children: [
+    { path: 'sms', component: SmsComponent, pathMatch: "full"},
+    { path: 'email', component: EmailComponent},
+    { path: 'contact', component: ContactComponent}
+  ]}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
 
 }
+
