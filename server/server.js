@@ -6,8 +6,8 @@ const port = 4000;
 const path = require("path");
 
 //sms package
-const accountSid = 'ACc53326a058466540ad237bd2a360f0cf';
-const authToken = '6d7d24aef6833235efe502350719626a';
+const accountSid = 'XXXXXXXXXXXXXXXXXXX';
+const authToken = 'XXxxxxxxxxxxxxxxxx';
 const client = require('twilio')(accountSid, authToken);
 
 var xlsx = require('xlsx');
@@ -49,7 +49,7 @@ app.use('/api/v1/companies', companyRoutes)
 
 
 app.post("/send-sms", (req, res)=> {
-  console.log(req.body)
+  console.log(req.body);
 var to = req.body.sms.to;
 // for(var i =0; i < to.length; i++){
 //   client.messages
